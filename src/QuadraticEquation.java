@@ -6,7 +6,7 @@ public class QuadraticEquation {
         double A, B, C;
         double Dis; //дискриминант прям просит употребить нормальный ООП//
         double route1, route2; //in internet many people in. them declare them in if-else, maube ur mistake//
-        System.out.println(" WE WORKS WITH STANDART QUADRATIC EQUATIONS: \n\n ax^2 + bx + c = 0 \n\n PRESS ENTER TO CONTINUE");
+        System.out.println(" WE WORKS WITH STANDARD QUADRATIC EQUATIONS: \n\n ax^2 + bx + c = 0 \n\n PRESS ENTER TO CONTINUE");
         System.out.println("Enter the value of A:");
         A = scanner.nextDouble();
         System.out.println("Enter the value of B:");
