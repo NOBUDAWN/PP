@@ -7,11 +7,11 @@ public class QuadraticEquation {
         double Dis; //дискриминант прям просит употребить нормальный ООП//
         double route1, route2; //in internet many people in. them declare them in if-else, maube ur mistake//
         System.out.println(" WE WORKS WITH STANDART QUADRATIC EQUATIONS: \n\n ax^2 + bx + c = 0 \n\n PRESS ENTER TO CONTINUE");
-        System.out.println("Введите коэффициент A");
+        System.out.println("Enter the value of A:");
         A = scanner.nextDouble();
-        System.out.println("Введите коэффициент B");
+        System.out.println("Enter the value of B:");
         B = scanner.nextDouble();
-        System.out.println("Введите коэффициент C");
+        System.out.println("Enter the value of C:");
         C = scanner.nextDouble();
         Dis = (B * B) - (4 * A * C);
 
