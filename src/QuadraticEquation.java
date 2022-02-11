@@ -11,7 +11,7 @@ public class QuadraticEquation {
         clcl.setB(scanner.nextDouble());
         System.out.println("Enter the value of C:");
         clcl.setC(scanner.nextDouble());
-        clcl.calcRoutes();
+        clcl.calcRoots();
 
     }
 }
@@ -29,18 +29,19 @@ class calculation {
         this.c = c;
     }
 
-    void calcRoutes (){
+    void calcRoots (){
         double dis = (b * b) - (4 * a * c);
-        double route1;
+        double root1;
         if (dis>0){
-            route1 = (-b-Math.sqrt(dis))/(2*a);
-            double route2 = (-b + Math.sqrt(dis)) / (2 * a);
-            System.out.println("ROUTES OF EQUATION \n FIRST:"+ route1 +"SECOND"+ route2);
+            root1 = (-b-Math.sqrt(dis))/(2*a);
+            double root2 = (-b + Math.sqrt(dis)) / (2 * a);
+            System.out.println("ROUTES OF EQUATION \n FIRST:"+ root1 +" SECOND"+ root2);
         }
         else if (dis==0){
-            route1 =-b/(2*a);
-            System.out.println("ROUTE OF EQUATION: "+ route1);
+            root1 =-b/(2*a);
+            System.out.println("ROUTE OF EQUATION: "+ root1);
         } else{
-            System.out.println("THIS EQUATION HAS NO ROUTES");}
+            System.out.println("THIS EQUATION HAS NO ROUTES");
+        }
     }
 }
