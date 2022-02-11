@@ -3,32 +3,45 @@ import java.util.Scanner;
 public class QuadraticEquation {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        double A, B, C;
-        double Dis; //дискриминант прям просит употребить нормальный ООП//
-        double route1, route2;
+        calculation clcl = new calculation();
         System.out.println(" WE WORKS WITH STANDARD QUADRATIC EQUATIONS: \n\n ax^2 + bx + c = 0 \n\n PRESS ENTER TO CONTINUE");
         System.out.println("Enter the value of A:");
-        A = scanner.nextDouble();
+        clcl.setA(scanner.nextDouble());
         System.out.println("Enter the value of B:");
-        B = scanner.nextDouble();
+        clcl.setB(scanner.nextDouble());
         System.out.println("Enter the value of C:");
-        C = scanner.nextDouble();
-        Dis = (B * B) - (4 * A * C);
+        clcl.setC(scanner.nextDouble());
+        clcl.calcRoutes();
 
-        if(Dis>0){
-            route1 = (-B-Math.sqrt(Dis))/(2*A);
-            route2 = (-B+Math.sqrt(Dis))/(2*A);
-            System.out.println("ROUTES OF EQUATION \n FIRST:"+route1+"SECOND"+route2); //" SECOND: "+route2//
-        }
-        else if (Dis==0){
-            route1=-B/(2*A);
-            System.out.println("ROUTE OF EQUATION: "+route1);
-        } else{
-            System.out.println("THIS EQUATION HAS NO ROUTES");
-        }
     }
 }
 
+class calculation {
+    private double a, b, c;
 
+    public void setA(double a){
+        this.a = a;
+    }
+    public void setB(double b){
+        this.b = b;
+    }
+    public void setC(double c){
+        this.c = c;
+    }
 
+    void calcRoutes (){
+        double dis = (b * b) - (4 * a * c);
+        double route1;
+        if (dis>0){
+            route1 = (-b-Math.sqrt(dis))/(2*a);
+            double route2 = (-b + Math.sqrt(dis)) / (2 * a);
+            System.out.println("ROUTES OF EQUATION \n FIRST:"+ route1 +"SECOND"+ route2);
+        }
+        else if (dis==0){
+            route1 =-b/(2*a);
+            System.out.println("ROUTE OF EQUATION: "+ route1);
+        } else{
+            System.out.println("THIS EQUATION HAS NO ROUTES");}
 
+    }
+}
