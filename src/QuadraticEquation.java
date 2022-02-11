@@ -42,6 +42,5 @@ class calculation {
             System.out.println("ROUTE OF EQUATION: "+ route1);
         } else{
             System.out.println("THIS EQUATION HAS NO ROUTES");}
-
     }
 }
