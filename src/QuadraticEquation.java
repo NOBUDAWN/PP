@@ -35,13 +35,13 @@ class calculation {
         if (dis>0){
             root1 = (-b-Math.sqrt(dis))/(2*a);
             double root2 = (-b + Math.sqrt(dis)) / (2 * a);
-            System.out.println("ROUTES OF EQUATION \n FIRST:"+ root1 +" SECOND"+ root2);
+            System.out.println("ROOTS OF EQUATION \n FIRST:"+ root1 +" SECOND"+ root2);
         }
         else if (dis==0){
             root1 =-b/(2*a);
-            System.out.println("ROUTE OF EQUATION: "+ root1);
+            System.out.println("A ROOT OF EQUATION: "+ root1);
         } else{
-            System.out.println("THIS EQUATION HAS NO ROUTES");
+            System.out.println("THIS EQUATION HAS NO ROOTS");
         }
     }
 }
