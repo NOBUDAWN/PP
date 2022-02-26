@@ -17,7 +17,9 @@ public class QuadraticEquation {
 }
 
 class calculation {
-    private double a, b, c;
+    private double a;
+    private double b;
+    private double c;
 
     public void setA(double a){
         this.a = a;
